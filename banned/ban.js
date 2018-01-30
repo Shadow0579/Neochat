@@ -42,6 +42,6 @@ function formatTime(ts) {
     var result = day + hour + min + "and " + sec + "."
     return result;
   } else {
-    return 'Your ban has expired. Click <a href="../index.html">here</a> to go back to UniChat.';
+    return 'Your ban has expired. Click <a href="../index.html">here</a> to go back to NeoChat.';
   }
 }
