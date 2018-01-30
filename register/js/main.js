@@ -2,7 +2,7 @@ var usernameDiv;
 var data;
 window.onload = function () {
   if (document.cookie.replace(/(?:(?:^|.*;\s*)unichat_uid2\s*\=\s*([^;]*).*$)|^.*$/, "$1") != "") {
-    location.href = "https://legend-of-iphoenix.github.io/UniChatDemo/?u=" + document.cookie.replace(/(?:(?:^|.*;\s*)unichat_uid2\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+    location.href = "https://Shadow0579.github.io/Neochat/?u=" + document.cookie.replace(/(?:(?:^|.*;\s*)unichat_uid2\s*\=\s*([^;]*).*$)|^.*$/, "$1");
   }
   usernameDiv = document.getElementById("username");
   usernameDiv.oninput = function () {
@@ -61,7 +61,7 @@ function submit() {
               uid = uuid;
               firebase.database().ref("uids/" + uid).set(value).then(function () {
                 document.cookie = "unichat_uid2=" + uid + ";expires=" + new Date(Date.now() + 157784760000);
-                location.href = "https://legend-of-iphoenix.github.io/UniChatDemo/";
+                location.href = "https://Shadow0579.github.io/Neochat/";
               });
             });
           } else {
@@ -82,7 +82,7 @@ var usernameDiv;
 var data;
 window.onload = function () {
   if (document.cookie.replace(/(?:(?:^|.*;\s*)unichat_uid2\s*\=\s*([^;]*).*$)|^.*$/, "$1") != "") {
-    location.href = "https://legend-of-iphoenix.github.io/UniChatDemo/";
+    location.href = "https://Shadow0579.github.io/Neochat/";
   }
   usernameDiv = document.getElementById("username");
   usernameDiv.oninput = function () {
@@ -142,7 +142,7 @@ function submit() {
               firebase.database().ref("uids/" + uid).set(value).then(function () {
                 firebase.database().ref("pass/" + uid).set(btoa(document.getElementById("password").value)).then(function () {
                   document.cookie = "unichat_uid2=" + uid + ";expires=" + new Date(Date.now() + 157784760000);
-                  location.href = "https://legend-of-iphoenix.github.io/UniChatDemo/";
+                  location.href = "https://Shadow0579.github.io/Neochat/";
                 });
               });
             });
