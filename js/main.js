@@ -269,7 +269,7 @@ function redirectFromHub() {
       firebase.database().ref("uids/"+snapshot.key).once('value').then(function(username) {
         var container = document.getElementById("online-users");
         var node = document.createElement("A");
-        node.setAttribute("href","https://legend-of-iphoenix.github.io/UniChatDemo/profile/index.html?u="+snapshot.key);
+        node.setAttribute("href","https://Shadow0579.github.io/Neochat/profile/index.html?u="+snapshot.key);
         node.innerText = username.val() + "\n";
         container.appendChild(node);
         node.setAttribute("name", snapshot.key);
@@ -500,7 +500,7 @@ function interpretMessage(data, key) {
             unread++;
           }
           isMentioned = (textClass == "highlight") || isMentioned;
-          document.title = (isMentioned ? "*" : "+") + " UniChat Beta (" + unread + " unread)";
+          document.title = (isMentioned ? "*" : "+") + " Neochat Beta (" + unread + " unread)";
         }
       } else {
         unread = 0;
